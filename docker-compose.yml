@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  frontend:
+    container_name: nextjs
+    build: .
+    command: npm run build
+    volumes:
+      - .:/usr/src
+    ports:
+      - "3002:3002"
